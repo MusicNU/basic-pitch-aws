@@ -11,10 +11,13 @@ docker build --platform linux/amd64 -t basic-pitch .
 ```
 ### Pushing the Image
 To push to ecr, go to the aws ecr and there should be a dropdown somehwere with the commaands for pushing. Or ask chatgpt how to do so. 
-#the command looks like this 
+
+The command looks like this. Make sure you are logged into your aws account!
 
 
 ```sh
+aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin "aws_account_id".dkr.ecr.<region>.amazonaws.com
+
 docker tag basic-pitch:latest "aws_acccount_id".mdkr.ecr.us-east-1.amazonaws.com/basic-pitch:latest
 
 docker push "aws_account_id".dkr.ecr.us-east-1.amazonaws.com/basic-pitch:latest
