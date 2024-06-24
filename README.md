@@ -6,7 +6,7 @@ Setup:
 basic-pitch is the name of the docker image we are building* 
 
 
- docker build --platform linux/amd64 -t basic-pitch .
+''' docker build --platform linux/amd64 -t basic-pitch .'''
 
 #to push to ecr, go to the aws ecr and there should be a dropdown somehwere with the commaands for pushing. Or ask chatgpt how to do so. 
 #the command looks like this 
