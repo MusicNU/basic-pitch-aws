@@ -9,6 +9,10 @@
 ```sh
 docker build --platform linux/amd64 -t basic-pitch .
 ```
+
+### How to develop the lambda function further
+Edit the app/ code to further develop the function. lambda_function.py has a lambda_handler, which functions as the api handler.
+
 ### Pushing the Image
 To push to ecr, go to the aws ecr and there should be a dropdown somehwere with the commaands for pushing. Or ask chatgpt how to do so. 
 
